@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="album_art">Album Art</string>
+    <string name="artist">artist</string>
+    <string name="music_note">Music Note</string>
+    <string name="blue_background">Blue background</string>
+    <string name="search_artist_here">Search artist here …</string>
+    <string name="warning_no_data">No data found.</string>
+    <string name="error_fetching_api">There\'s an error when connect to server.</string>
+    <string name="previous">Previous</string>
+</resources>

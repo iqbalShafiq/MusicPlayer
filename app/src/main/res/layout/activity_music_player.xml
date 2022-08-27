@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.musicplayer.MusicPlayerActivity">
+
+    <ImageView
+        android:id="@+id/iv_toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue_accent"
+        android:contentDescription="@string/blue_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_search"
+        style="@style/Regular12Sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/bg_radius_8dp"
+        android:hint="@string/search_artist_here"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_toolbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_toolbar_background" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_progress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ll_media_control"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_toolbar_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_error"
+                style="@style/Regular12Sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="32dp"
+                android:paddingTop="24dp"
+                android:text="@string/warning_no_data"
+                android:textColor="@color/blue_variant_accent"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_music_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingHorizontal="32dp"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_music_player" />
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_media_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_primary"
+        android:elevation="5dp"
+        android:paddingVertical="16dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_prev"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/ic_prev"
+            app:tint="@color/dark_accent" />
+
+        <ImageView
+            android:id="@+id/iv_control"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="48dp"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/ic_play"
+            app:tint="@color/blue_accent" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/ic_next"
+            app:tint="@color/dark_accent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

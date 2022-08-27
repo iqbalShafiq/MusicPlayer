@@ -1,0 +1,102 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MusicPlayer" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_accent</item>
+        <item name="colorPrimaryVariant">@color/blue_variant_accent</item>
+        <item name="colorOnPrimary">@color/dark_accent</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_primary</item>
+        <item name="colorSecondaryVariant">@color/light_primary</item>
+        <item name="colorOnSecondary">@color/dark_accent</item>
+        <!-- Status bar color. -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">@color/blue_accent</item>
+        <item name="android:statusBarColor">@color/blue_accent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">?colorSecondary</item>
+    </style>
+
+    <style name="BottomDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Text -->
+    <style name="Bold36Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Bold24Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Bold20Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Bold18Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Bold14Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Medium18Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Medium16Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Medium14Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Medium12Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Regular14Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Regular12Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Regular10Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

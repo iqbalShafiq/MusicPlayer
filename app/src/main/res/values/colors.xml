@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Light  -->
+    <color name="light_primary">#FFEEEEEE</color>
+    <color name="light_disabled">#FF8F8F8F</color>
+
+    <!--  Dark Accent  -->
+    <color name="dark_accent">#FF3A3F47</color>
+    <color name="dark_secondary">#606977</color>
+
+    <!--  Colors Accent  -->
+    <color name="blue_accent">#FF4d75f1</color>
+    <color name="blue_variant_accent">#FF5174e8</color>
+    <color name="green_accent">#FF4eac92</color>
+    <color name="yellow_accent">#FFfeca24</color>
+
+    <!--  Other Colors  -->
+    <color name="transparent">#00EEEEEE</color>
+    <color name="black">#000000</color>
+</resources>
